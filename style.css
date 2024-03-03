@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Times New Roman', Times;
+    background-image: url("assets/background-paper.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#222;
+}
+
+p{
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-family: "Abril Fatface", serif;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-family: "Abril Fatface", serif;
+    letter-spacing: 2px;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.paper-body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width:80%;
+    overflow: scroll;
+}
+
+.paper-body::-webkit-scrollbar{
+    display: none;
+}
+
+.paper-main-heading{
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: -10px;
+    cursor: pointer;
+}
+
+.paper-rule{
+    background-color:black;
+    height:2px;
+    width:100%;
+    margin-top:2px;
+    margin-bottom: 2px;
+}
+
+.vertical-rule{
+    background-color:black;
+    height:100%;
+    width:2px;
+    margin-left:2px;
+    margin-right: 2px;
+}
+
+.paper-information{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+    font-variant: small-caps;
+    font-size: 1.3rem;
+}
+
+.paper-main-body{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+}
+
+.main-section{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    padding:5px;
+}
+
+.main-right-column{
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    padding:5px;
+    border-left: 2px solid #1c1f33;
+}
+
+.skill-section{
+    display: flex;
+}
+
+.skill-details{
+    width:60%; 
+}
+
+.skill-set-box{
+    font-variant: small-caps;
+    padding: 5px;
+}
+
+.photo-filter{
+    filter: grayscale();
+    outline: 1px solid black;
+    outline-offset: 1px;
+    transition: all 0.2s ease-in;
+}
+
+.photo-filter:hover{
+    filter: grayscale(0);
+}
+
+.profile-photo{
+    width:30%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: center;
+}
+
+.experience-logo{
+    width:90%;
+    aspect-ratio: 16/9;
+}
+
+.experience-details{
+    text-align: justify;
+    font-weight: 500;
+    width:90%;
+}
+
+.project-showcase{
+    padding-top:10px;
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;
+}
+
+.project{
+    padding: 0 5px 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left:2px;
+    text-align: center;
+}
+
+.project:hover .project-image{
+    transform:scale(1.2);
+    filter: grayscale(0);
+}
+
+.project:nth-child(2){
+    border-left: 2px solid black;
+    
+}
+
+.project:nth-child(3){
+    border-left: 2px solid black;
+}
+
+.project-container{
+    overflow: hidden;
+    height:200px;
+    aspect-ratio:16/9;
+}
+
+.project-image{
+    height:200px;
+    aspect-ratio:16/9;
+    object-fit: cover;
+    object-position:center;
+    transition: all 0.2s ease-in-out
+}
+
+.project-image:hover{
+    transform:scale(1.2);
+}
+
+.spinning-wheel{
+    display: grid;
+    place-items:center;
+    width:8%; 
+    animation: spin 3s infinite;
+    padding:0;
+    margin:0;
+}
+
+.page-break-marquee{
+    display:flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+marquee{
+    width:90%;
+    height:50px;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+.paper-contact{
+    width:100%;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper-contact-heading{
+    width:100%;
+    text-align: center;
+    background-color:black;
+    color:white;
+}
+
+.paper-contact input{
+    height: 20px;
+    width:300px;
+    padding: 5px;
+    margin:5px;
+}
+
+.paper-contact textarea{
+    height: 100px;
+    width:300px;
+    padding: 5px;
+    margin:5px;
+}
+
+.paper-contact button{
+    outline: 1px solid black;
+    border:none;
+    margin:5px;
+    font-size:20px;
+    font-variant: small-caps;
+    background:none;
+}
+
+.paper-footer{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paper-footer-socials{
+    width:80%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paper-footer-socials svg{
+    color:black;
+    font-size: 35px;
+    aspect-ratio:1/1;
+}
+
+.paper-footer-logo h2{
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: -3px;
+}
+
+@media (max-width:728px) {
+    .paper-body{
+        width:100%;
+    }
+
+    .paper-main-body{
+        flex-direction: column;
+    }
+
+    .paper-main-heading{
+        font-size: 80px;
+    }
+
+    .main-section{
+        width:100%;
+    }
+
+    .main-right-column{
+        width:100%;
+        border:none;
+    }
+
+    .paper-information p:nth-child(3){
+        display: none;
+    }
+
+    .skill-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill-details{
+        width:100%;
+    }
+
+    .profile-photo{
+        width:50%;
+    }
+
+    .project-showcase{
+        flex-direction: column;
+    }
+
+    .project:nth-child(2){
+        border-left:none;
+    }
+
+    .project:nth-child(3){
+        border-left:none;
+    }
+    
+    .page-break-marquee{
+        width:90%;
+    }
+
+    .page-break-marquee svg{
+        height:0.8em;
+        aspect-ratio: 1/1;
+    }
+    
+    .paper-footer-logo{
+        display:none;
+    }
+}
+
+@keyframes spin{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
