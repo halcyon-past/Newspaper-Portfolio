@@ -11,7 +11,7 @@ body{
     font-family: 'Times New Roman', Times;
     background-image: url("assets/background-paper.png");
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     color:#222;
     overflow: scroll;
@@ -47,12 +47,8 @@ a{
     align-items: center;
     justify-content: flex-start;
     width:80%;
-    overflow: scroll;
 }
 
-.paper-body::-webkit-scrollbar{
-    display: none;
-}
 
 .paper-main-heading{
     font-size: 100px;
@@ -227,7 +223,6 @@ marquee{
 
 .paper-contact{
     width:100%;
-    padding:10px;
     display:flex;
     flex-direction:column;
     justify-content: center;
