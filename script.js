@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   gsap.to(header, {
-    duration: 4,
+    duration: 2,
     height: headerHeight,
     fontSize: headerFontSize,
     ease: "power2.out",
