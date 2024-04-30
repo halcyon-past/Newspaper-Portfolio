@@ -3,6 +3,10 @@ const header = document.getElementById("paper-main-heading");
 const r = document.querySelector(":root");
 const darkModeToggle = document.querySelector(".dark-mode-toggle");
 const body = document.querySelector("body");
+const laptop1 = document.getElementById("laptop1");
+const laptop2 = document.getElementById("laptop2");
+const laptop3 = document.getElementById("laptop3");
+const laptop4 = document.getElementById("laptop4");
 
 var headerHeight = "20vh";
 var headerFontSize = "100px";
@@ -53,9 +57,48 @@ function plusDivs(n) {
   showDivs((slideIndex += n));
 }
 
-setInterval(function () {
-  plusDivs(1);
-}, 15000);
+var intervalId;
+
+function startInterval() {
+  intervalId = setInterval(function () {
+    plusDivs(1);
+  }, 15000);
+}
+
+startInterval();
+
+laptop1.addEventListener("mouseenter", function() {
+  clearInterval(intervalId);
+});
+
+laptop1.addEventListener("mouseleave", function() {
+  startInterval();
+});
+
+laptop2.addEventListener("mouseenter", function() {
+  clearInterval(intervalId);
+});
+
+laptop2.addEventListener("mouseleave", function() {
+  startInterval();
+});
+
+laptop3.addEventListener("mouseenter", function() {
+  clearInterval(intervalId);
+});
+
+laptop3.addEventListener("mouseleave", function() {
+  startInterval();
+});
+
+laptop4.addEventListener("mouseenter", function() {
+  clearInterval(intervalId);
+});
+
+laptop4.addEventListener("mouseleave", function() {
+  startInterval();
+});
+
 
 function showDivs(n) {
   var i;
