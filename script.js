@@ -7,6 +7,7 @@ const laptop1 = document.getElementById("laptop1");
 const laptop2 = document.getElementById("laptop2");
 const laptop3 = document.getElementById("laptop3");
 const laptop4 = document.getElementById("laptop4");
+const laptop5 = document.getElementById("laptop5");
 
 var headerHeight = "20vh";
 var headerFontSize = "100px";
@@ -99,6 +100,13 @@ laptop4.addEventListener("mouseleave", function() {
   startInterval();
 });
 
+laptop5.addEventListener("mouseenter", function() {
+  clearInterval(intervalId);
+});
+
+laptop5.addEventListener("mouseleave", function() {
+  startInterval();
+});
 
 function showDivs(n) {
   var i;
